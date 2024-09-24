@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cinemas - Reserva de Asientos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="animate__animated animate__fadeIn">
+        <nav>
+            <h1><ion-icon name="film-outline"></ion-icon> Cinemas</h1>
+            <ul>
+                <li><a>Cartelera</a></li>
+                <li><a>VIP</a></li>
+                <li><a>Próximamente</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeIn animate__delay-1s">
+        <h3>Selecciona una película:</h3>
+        <select name="peliculas" id="peliculas">
+            <option value="the-lion-king">The Lion King</option>
+            <option value="mulan">Mulan</option>
+            <option value="harry-potter">Harry Potter</option>
+            <option value="the-chosen">The Chosen</option>
+            <option value="barbie">Barbie</option>
+        </select>
+
+        <div class="lista">
+            <ul>
+                <li class="available">Disponible</li>
+                <li class="selected">Seleccionado</li>
+                <li class="occupied">Reservado</li>
+            </ul>
+        </div>
+
+        <div class="pantalla-anim"></div>
+
+        <div class="asientos">
+            <div class="fila">
+                <div id="1" class="asiento" onclick="clickear(this)"></div>
+                <div id="2" class="asiento" onclick="clickear(this)"></div>
+                <div id="3" class="asiento" onclick="clickear(this)"></div>
+                <div id="4" class="asiento" onclick="clickear(this)"></div>
+                <div id="5" class="asiento" onclick="clickear(this)"></div>
+                <div id="6" class="asiento" onclick="clickear(this)"></div>
+                <div id="7" class="asiento" onclick="clickear(this)"></div>
+                <div id="8" class="asiento" onclick="clickear(this)"></div>
+                <div id="9" class="asiento" onclick="clickear(this)"></div>
+                <div id="10" class="asiento" onclick="clickear(this)"></div>
+            </div>
+            
+            <div class="fila">
+                <div id="11" class="asiento" onclick="clickear(this)"></div>
+                <div id="12" class="asiento" onclick="clickear(this)"></div>
+                <div id="13" class="asiento" onclick="clickear(this)"></div>
+                <div id="14" class="asiento" onclick="clickear(this)"></div>
+                <div id="15" class="asiento" onclick="clickear(this)"></div>
+                <div id="16" class="asiento" onclick="clickear(this)"></div>
+                <div id="17" class="asiento" onclick="clickear(this)"></div>
+                <div id="18" class="asiento" onclick="clickear(this)"></div>
+                <div id="19" class="asiento" onclick="clickear(this)"></div>
+                <div id="20" class="asiento" onclick="clickear(this)"></div>
+            </div>
+            <div class="fila">
+                <div id="21" class="asiento" onclick="clickear(this)"></div>
+                <div id="22" class="asiento" onclick="clickear(this)"></div>
+                <div id="23" class="asiento" onclick="clickear(this)"></div>
+                <div id="24" class="asiento" onclick="clickear(this)"></div>
+                <div id="25" class="asiento" onclick="clickear(this)"></div>
+                <div id="26" class="asiento" onclick="clickear(this)"></div>
+                <div id="27" class="asiento" onclick="clickear(this)"></div>
+                <div id="28" class="asiento" onclick="clickear(this)"></div>
+                <div id="29" class="asiento" onclick="clickear(this)"></div>
+                <div id="30" class="asiento" onclick="clickear(this)"></div>
+            </div>
+            <div class="fila">
+                <div id="31" class="asiento" onclick="clickear(this)"></div>
+                <div id="32" class="asiento" onclick="clickear(this)"></div>
+                <div id="33" class="asiento" onclick="clickear(this)"></div>
+                <div id="34" class="asiento" onclick="clickear(this)"></div>
+                <div id="35" class="asiento" onclick="clickear(this)"></div>
+                <div id="36" class="asiento" onclick="clickear(this)"></div>
+                <div id="37" class="asiento" onclick="clickear(this)"></div>
+                <div id="38" class="asiento" onclick="clickear(this)"></div>
+                <div id="39" class="asiento" onclick="clickear(this)"></div>
+                <div id="40" class="asiento" onclick="clickear(this)"></div>
+            </div>
+            
+            <button onclick="reservar()">Reservar</button>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
